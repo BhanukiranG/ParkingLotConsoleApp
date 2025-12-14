@@ -1,0 +1,15 @@
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/bin/Debug/net8.0/ParkingLotConsoleApp
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/bin/Debug/net8.0/ParkingLotConsoleApp.deps.json
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/bin/Debug/net8.0/ParkingLotConsoleApp.runtimeconfig.json
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/bin/Debug/net8.0/ParkingLotConsoleApp.dll
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/bin/Debug/net8.0/ParkingLotConsoleApp.pdb
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/obj/Debug/net8.0/ParkingLotConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/obj/Debug/net8.0/ParkingLotConsoleApp.AssemblyInfoInputs.cache
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/obj/Debug/net8.0/ParkingLotConsoleApp.AssemblyInfo.cs
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/obj/Debug/net8.0/ParkingLotConsoleApp.csproj.CoreCompileInputs.cache
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/obj/Debug/net8.0/ParkingLotConsoleApp.sourcelink.json
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/obj/Debug/net8.0/ParkingLotConsoleApp.dll
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/obj/Debug/net8.0/refint/ParkingLotConsoleApp.dll
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/obj/Debug/net8.0/ParkingLotConsoleApp.pdb
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/obj/Debug/net8.0/ParkingLotConsoleApp.genruntimeconfig.cache
+/Users/user/Dot Net Projects/ParkingLotConsoleApp/obj/Debug/net8.0/ref/ParkingLotConsoleApp.dll

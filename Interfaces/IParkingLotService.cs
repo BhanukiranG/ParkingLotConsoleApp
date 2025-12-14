@@ -11,4 +11,5 @@ public interface IParkingLotService
     ParkingTicket? ParkVehicle(IVehicle vehicle);
     void UnPark(string vehicleNumber);
     void ShowOccupancy();
+    IReadOnlyCollection<ParkingTicket> GetActiveTickets();
 }

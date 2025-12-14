@@ -5,6 +5,7 @@ using ParkingLotConsoleApp.Utils;
 
 IParkingLotService parkingLot = new ParkingLotService();
 
+Console.Clear();
 ConsoleHelper.PrintHeader("Parking Lot Simulation");
 
 Console.Write("Enter 2-Wheeler slots: ");
@@ -20,20 +21,22 @@ parkingLot.Initialize(m, n, o);
 
 while (true)
 {
-    Console.WriteLine("\n1. Park Vehicle");
+    Console.Clear();
+    ConsoleHelper.PrintHeader("Parking Lot Simulation");
+
+    Console.WriteLine("1. Park Vehicle");
     Console.WriteLine("2. Un-Park Vehicle");
     Console.WriteLine("3. Show Occupancy");
     Console.WriteLine("0. Exit");
-    Console.Write("Choice: ");
+    Console.Write("\nChoice: ");
 
     var choice = Console.ReadLine();
 
+    Console.Clear();
+    ConsoleHelper.PrintHeader("Parking Lot Simulation");
+
     switch (choice)
     {
-        case "0":
-            Environment.Exit(0);
-            break;
-
         case "1":
             Console.Write("Vehicle Number: ");
             var number = Console.ReadLine()!;
@@ -44,23 +47,52 @@ while (true)
             var ticket = parkingLot.ParkVehicle(new Vehicle(number, type));
 
             if (ticket == null)
-                Console.WriteLine("No slot available");
+                Console.WriteLine("\n❌ No slot available");
             else
-                Console.WriteLine($"Parked at Slot {ticket.SlotNumber} at {ticket.InTime}");
+                Console.WriteLine($"\n✅ Parked at Slot {ticket.SlotNumber}\n🕒 In Time: {ticket.InTime}");
+
+            Pause();
             break;
 
         case "2":
-            Console.Write("Vehicle Number: ");
+            var tickets = parkingLot.GetActiveTickets();
+
+            if (!tickets.Any())
+            {
+                Console.WriteLine("\nNo vehicles parked");
+                Pause();
+                break;
+            }
+
+            Console.WriteLine("Parked Vehicles:\n");
+            foreach (var t in tickets)
+                Console.WriteLine($"Vehicle: {t.VehicleNumber} | Slot: {t.SlotNumber}");
+
+            Console.Write("\nEnter Vehicle Number to Un-Park: ");
             parkingLot.UnPark(Console.ReadLine()!);
-            Console.WriteLine("Vehicle Un-Parked Successfully");
+
+            Console.WriteLine("\n✅ Vehicle Un-Parked Successfully");
+            Pause();
             break;
 
         case "3":
             parkingLot.ShowOccupancy();
+            Pause();
+            break;
+
+        case "0":
+            Environment.Exit(0);
             break;
 
         default:
-            Console.WriteLine("Invalid choice");
+            Console.WriteLine("\n❌ Invalid choice");
+            Pause();
             break;
     }
+}
+
+static void Pause()
+{
+    Console.WriteLine("\nPress any key to continue...");
+    Console.ReadKey();
 }

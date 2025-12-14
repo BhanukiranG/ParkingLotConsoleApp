@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ParkingLotConsoleApp/1.0.0": {
+        "runtime": {
+          "ParkingLotConsoleApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ParkingLotConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

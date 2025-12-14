@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParkingLotConsoleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c49ae5135d62b8c7d32cd4676aa87fb987bf1ab4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4c1f0b3ac9512886fcea21476e347bd8ab79d43")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParkingLotConsoleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParkingLotConsoleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -83,4 +83,9 @@ public class ParkingLotService : IParkingLotService
             Console.WriteLine($"{type}: {occupied}/{total} occupied");
         }
     }
+
+    public IReadOnlyCollection<ParkingTicket> GetActiveTickets()
+    {
+        return _activeTickets.Values.ToList().AsReadOnly();
+    }
 }
