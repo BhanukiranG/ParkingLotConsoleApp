@@ -6,7 +6,7 @@ using ParkingLotConsoleApp.Utils;
 ParkingLotService parkingLot = new();
 
 Console.Clear();
-ConsoleHelper.PrintHeader("Parking Lot Simulation");
+ConsoleHelper.PrintHeader("Parking Lot System");
 
 Console.Write("Enter 2-Wheeler slots: ");
 int m = int.Parse(Console.ReadLine()!);
@@ -22,7 +22,7 @@ parkingLot.Initialize(m, n, o);
 while (true)
 {
     Console.Clear();
-    ConsoleHelper.PrintHeader("Parking Lot Simulation");
+    ConsoleHelper.PrintHeader("Parking Lot System");
 
     Console.WriteLine("1. Park Vehicle");
     Console.WriteLine("2. Un-Park Vehicle");
@@ -33,7 +33,7 @@ while (true)
     var choice = Console.ReadLine();
 
     Console.Clear();
-    ConsoleHelper.PrintHeader("Parking Lot Simulation");
+    ConsoleHelper.PrintHeader("Parking Lot System");
 
     switch (choice)
     {
@@ -57,7 +57,7 @@ while (true)
         case "2":
             var tickets = parkingLot.GetActiveTickets();
 
-            if (!tickets.Any())
+            if (tickets.Count == 0)
             {
                 Console.WriteLine("\nNo vehicles parked");
                 Pause();
