@@ -1,18 +1,25 @@
 using ParkingLotConsoleApp.Interfaces;
 
-
 namespace ParkingLotConsoleApp.Models;
 
-
-public class Vehicle : IVehicle
+/// <summary>
+/// Represents a vehicle that can be parked in the parking lot.
+/// </summary>
+/// <param name="vehicleNumber">
+/// The unique registration number of the vehicle.
+/// </param>
+/// <param name="type">
+/// The type of the vehicle, which determines the category of parking slot it can occupy.
+/// </param>
+public class Vehicle(string vehicleNumber, VehicleType type) : IVehicle
 {
-    public string VehicleNumber { get; }
-    public VehicleType Type { get; }
+    /// <summary>
+    /// Gets the unique registration number of the vehicle.
+    /// </summary>
+    public string VehicleNumber { get; } = vehicleNumber;
 
-
-    public Vehicle(string vehicleNumber, VehicleType type)
-    {
-        VehicleNumber = vehicleNumber;
-        Type = type;
-    }
+    /// <summary>
+    /// Gets the type of the vehicle.
+    /// </summary>
+    public VehicleType Type { get; } = type;
 }

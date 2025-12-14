@@ -3,7 +3,7 @@ using ParkingLotConsoleApp.Models;
 using ParkingLotConsoleApp.Services;
 using ParkingLotConsoleApp.Utils;
 
-IParkingLotService parkingLot = new ParkingLotService();
+ParkingLotService parkingLot = new();
 
 Console.Clear();
 ConsoleHelper.PrintHeader("Parking Lot Simulation");
